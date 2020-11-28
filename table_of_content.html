@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+	<link rel="stylesheet" type="text/css">
+	<title>Html Task|educurve</title>
+	<style type="text/css">
+		#toc_container 
+		{
+    		background: #f9f9f9;
+    		border: 1px solid #aaa;
+    		display: table;
+    		font-size: 100%;
+    		margin-bottom: 1em;
+    		padding: 20px;
+    		width: auto;
+    		text-align: center;
+    		cursor: pointer;
+    		text-align: justify;
+    		margin-left: 350px;
+		}
+
+		.toc_title 
+		{
+    		font-weight: 700;
+    		text-align: center;
+		}
+
+		#toc_container li, #toc_container ul, #toc_container ul li
+		{
+    		list-style: outside none none !important;
+
+		}
+		
+		.sidenav 
+		{
+  			height: 100%;
+  			width: 0;
+  			position: fixed;
+  			z-index: 1;
+  			top: 0;
+  			left: 0;
+  			background-color: #111;
+  			overflow-x: hidden;
+  			transition: 0.5s;
+  			padding-top: 60px;
+		}
+
+		.sidenav a 
+		{
+  			padding: 8px 8px 8px 32px;
+  			text-decoration: none;
+  			font-size: 25px;
+  			color: #818181;
+  			display: block;
+  			transition: 0.3s;
+		}
+
+		.sidenav a:hover 
+		{
+  			color: #f1f1f1;
+		}
+
+		.sidenav .closebtn 
+		{
+  			position: absolute;
+  			top: 0;
+  			right: 25px;
+  			font-size: 36px;
+  			margin-left: 50px;
+		}
+
+		@media screen and (max-height: 450px) 
+		{
+  			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
+		}
+		.topnav 
+		{
+  			overflow: hidden;
+  			background-color: #45d16a;
+		}
+		.topnav a 
+		{
+  			float: left;
+  			padding: 16px 16px 16px 16px;
+  			text-decoration: none;
+  			font-size: 16px;
+		}
+		.syllables
+		{
+			cursor: pointer; 
+			font-size: 16px;
+        	background-color: transparent; 
+        	height: 30px; 
+        	width: 200px; 
+        	color: blue;  
+        	outline: none;
+        	border: none;
+        	margin-left: 10px;
+        	padding: 12px 16px;
+        	text-decoration: none;
+			float: left;
+		}
+		.syllables:hover 
+		{
+			color:red;
+		}
+		.home
+		{
+			background-color: none;
+			border: none;
+			color: blue;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+			text-decoration: none;
+			float: left;
+			margin-left:50px;
+			margin-right: auto;
+			height: 30px;
+		}
+		.about
+		{
+			background-color: none;
+			border: none;
+			color: blue;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+			text-decoration: none;
+			margin-left: 10px;
+			margin-right: auto;
+			float: left;
+			height: 30px;
+		}
+		.contact
+		{
+			background-color: none;
+			border: none;
+			color: blue;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+			text-decoration: none;
+			margin-left: auto;
+			margin-right: 10px;
+			float: right;
+			height: 30px;
+		}
+		.edu
+		{
+			background-color: none;
+			border: none;
+			color:blue;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+			text-decoration: none;
+			margin-left: 220px;
+			margin-right: 50px;
+			float: left;
+			height: 30px;
+		}
+		.spa
+		{
+			background-color:#45d16a ;
+			border: none;
+			color: blue;
+			padding: 16px 16px;
+			font-size: 17px;
+			cursor: pointer;
+			text-decoration: none;
+			margin-left: auto;
+			float: left;
+			height: 30px;
+		}
+		.spa:hover
+		{
+			color: red;
+		}
+		a:hover 
+		{
+			color:red;
+		}
+		.para
+		{
+			text-indent: 50px;
+		}
+		input
+		{
+			background-color: transparent;
+			border: none;
+			color:blue;
+			font-size: 16px;
+			cursor: pointer;
+			text-decoration: none;
+			margin:auto;
+			float: left;
+			margin-left: 40%;
+			margin-top: 200px;
+		}
+		input:hover
+		{
+			color: red;
+		}
+		
+
+		
+	</style>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="#">SIGNUP</a>
+  		<a href="#">LOGIN</a>
+  		<a href="#">SERVICES</a>
+  		<a href="#">MOREINFO</a>
+		</div>
+		<span class="spa" onclick="openNav()">&#9776; MENU</span>
+	<div class="topnav">
+		
+	<div><a href="table_of_content.html"class="home">HOME</a></div>
+	<div><a href="table_of_content.html"class="about">ABOUT US</a></div>
+	<div><a href="https://www.educurve.com/"class="edu">EDUCURVE LEARNING SOLUTIONS</a></div>
+	<div><a href="table_of_content.html"class="contact">CONTACT US</a></div>
+
+	</div>	
+
+	<div id="toc_container">
+	<p class="toc_title">OVERVIEW OF SYLLABLES</p>
+	<ul class="toc_list">
+  	<li><a href="#Intro">INTRODUCTION TO SYLLABLES</a>
+    <li><a href="#Syllable">WHAT IS SYLLABLES?</a></li>
+    <li><a href="#Types">TYPES OF SYLLABLES AND WORDS</a></li>
+    <li><a href="#FORMATION">FORMATION OF SYLLABLES</a></li>
+    <li><a href="#Open">WHAT IS OPEN SYLLABLES</a></li>
+    <li><a href="#close">WHAT IS CLOSED SYLLABLES</a></li>
+    <li><a href="#Reading">HOW KNOWLEDGE OF SYLLABLE TYPES HELPS READING</a></li>
+    <li><a href="#Spelling">HOW KNOWLEDGE OF SYLLABLE TYPES HELPS SPELLING</a></li>
+    <li><a href="#Monosyllabic">MONOSYLLABIC WORDS</a></li>
+    <li><a href="#Tmonosyllabic">TYPES OF MONOSYLLABIC WORDS</a></li>
+    <li><a href="#Multisyllabic">MULTISYLLABIC WORDS</a></li>
+    <li><a href="#Disyllabic">WORD STRESS</a></li>
+	</div>
+	<div>
+	<a href="#Syllable"name="Intro"><b>INTRODUCTION TO SYLLABLES</b></a><br>
+	
+	<p class="para">Take the two sentences for instance. Peter made huge <i>progress</i> in his grammar lessons. Peter <i>progressed</i> a lot with his grammar lessons. You have probably already understood the fact that the first sentence has the word <i>progress</i> used as a noun, and the second sentence has the word <i>progress</i> functioning as a verb. If you are wondering what we are blabbering about, it’s because you are new to the world of syllables. To answer this question, pronounce the word first as a noun and pronounce it again as a verb. The noun <i>progress</i> has its stress on the first syllable while the verb <i>progress</i> has its stress on the second syllable. Syllables are an important aspect of English learning. Understanding details like what syllables are, how many types of syllables there are, how many syllables are in a word forms, and so on forms the crux of syllable learning.</p>
+
+  	<a href="#Types" name="Syllable"><b>WHAT IS SYLLABLES?</b></a><br>
+  	<p class="para">
+  	A syllable is a single, unbroken unit or sound of a spoken word. Often it’s when consonants join vowels that a syllable is born. A syllable may have more than one letter but not more than one sound. An easy way to understand a syllable is to think about it as a segment of sound produced with a single pulse of air from the lungs<br>
+  	<b>Examples of Syllables</b><br>
+  	A, Here are some examples of one-syllable words: <br>
+			Try<br>
+			Syllable stress in try: <u>try</u><br>
+			How to pronounce try: trahy<br>
+			Car <br>
+			Syllable stress in try: <u>car</u><br>
+			How to pronounce try: kahr <br>
+			Tree<br>
+			Syllable stress in tree: <u>tree</u><br>
+			How to pronounce try: tree<br><br>
+			B, Here are a few examples of two-syllable words <br>
+			Hotel <br>
+			Syllables in hotel: ho-tel<br>
+			Syllable stress in hotel: ho-<u>tel</u><br>
+			How to pronounce hotel: hot-tel <br>
+			Meeting <br>
+			Syllables in meeting: meet-ing <br>
+			Syllable stress in meeting:<u>meet</u>-ing<br>
+			How to pronounce meeting: mee-ting <br>
+			Seven <br>
+			Syllables in seven: sev-en<br> 
+			Syllable stress in seven: <u>sev</u>-en<br>
+			How to pronounce seven: sev-en <br><br>
+			C, Here are some words that have three syllables in them: <br>
+			Happiness<br>
+			Syllables in happiness: hap-pi-ness<br>
+			Syllable stress in happiness: <u>hap</u>-pi-ness<br>
+			How to pronounce happiness: hap-ee-nis <br>
+			Amazing  <br>
+			Syllables in amazing: a-maz-ing<br>
+			Syllable stress in amazing: a-<u>maz</u>-ing<br>
+			How to pronounce amazing: uh-mey-zing<br><br>
+			Holiday <br>
+			Syllables in holiday: hol-i-day<br>
+			Syllable stress in holiday: <u>hol</u>-i-day<br>
+			How to pronounce holiday: hol-i-dey </p><br>
+	
+  	
+  	<a href="#Formation" name="Types">TYPES OF SYLLABLES AND WORDS</a><br>
+  	
+  	<p class="para">Syllables are divided into open and closed syllables based on how they are formed. Words are divided into monosyllabic words and polysyllabic words based on how many syllables are there in it. We are now going to first discuss open and closed syllables. Then, we’ll talk about monosyllabic and polysyllabic words.</p><br>
+
+  	<a href="#Open"name="Formation">FORMATION OF SYLLABLES</a><br>
+
+  	<p class="para">Syllables drive meaning in language. At the heart of every word is the sound created with the coming together of its vowels and consonants. Most of the time, it’s when a vowel joins with a consonant or consonants that a syllable is formed. A syllable starts with a vowel sound. It’s common for a syllable to have more than one vowel but not more than one vowel sound. </p><br>
+
+  	<a href="#close"name="Open">WHAT IS OPEN SYLLABLE?</a><br>
+
+  	<p class="para">An open syllable occurs in words that are just one-syllable long. Since there are no consonants closing the vowels off, they remain open.</p>
+	<p class="para">Formed with only one vowel, an open syllable has just one vowel sound. To identify an open syllable, look for either a single vowel standing on its own as in <i>I</i> or a single vowel at the end of the word like in <i>be</i>. In other words, this syllable ends in a long vowel.<br>
+	Examples: <br>
+	she, me, go, a, no, so <br>
+	Try pronouncing the word<i> she</i> for example. The word ends in a long vowel <i>e</i>. There is no consonant closing it, so it remains open. 
+  	</p>
+  	<a href="#Reading"name="close">WHAT IS CLOSED SYLLABLE?</a>
+
+  	<p class="para">A closed syllable has a vowel followed by or rather closed by a consonant. There is only one vowel and therefore only one vowel sound. In such syllables, the vowels say their short sounds most of the time.<br>
+	Examples:<br>
+	club, king  slab, panic, basket, fantastic, magnetic 
+	Try pronouncing the word<i>club</i> for example. The vowel <i>u</i> is followed or closed by the consonant <i>b</i>. Also, the vowel says its short sound. 
+	</p>
+
+  	<a href="#Spelling"name="Reading">HOW KNOWLEDGE OF SYLLABLE TYPES HELPS READING</a><br>
+
+  	<p class="para">
+  		Effective knowledge of open and closed syllables helps students with their reading. Imagine, for example, you come across the word “debt” while reading and you have no idea how to read it. If you have read about open and closed syllables, you will most likely not freak out because you are equipped to tell if the <i>e</i> in “debt” says its short sound or long sound. You zero in on the word and find that the e is followed by a consonant. So you come to the conclusion that it’s a closed syllable and a hence short vowel.
+  	</p>
+
+  	<a href="#Monosyllabic"name="Spelling">HOW KNOWLEDGE OF SYLLABLE TYPES HELPS SPELLING</a><br>
+
+  	<p class="para">
+  		Being aware of open and closed syllables can help with spelling, too. Let’s say, for instance, your teacher asks you to spell the word “written”. You are confused if it’s <i>writen</i> with a single <i>t</i> or<i> written</i> with two <i>ts</i>. You put whatever little knowledge you have about open and closed syllables to play. It doesn’t take you long to figure out that if you left the first vowel open, you’d say the long sound and end up writing <i>writen</i>.You are sure you heard the teacher say a short and not a long sound, which means the word is spelt <i>written</i><br>. 
+  	</p>
+
+  	<a href="#Tmonosyllabic"name="Monosyllabic">MONOSYLLABIC WORDS</a><br>
+
+  	<p class="para">
+  		The prefix <b>mono</b>- means one or single. A monosyllabic word is a word with only one syllable. In other words, it’s an uninterrupted sound or single sound that makes a complete word.<br>
+		Examples: <br>
+		Live, eat, drink<br>
+
+  	</p>
+
+  	<a href="#Multisyllabic"name="Tmonosyllabic">TYPES OF MONOSYLLABIC WORDS</a><br>
+
+  	<p class="para">
+  		Monosyllabic words can be divided into single vowel sound, double vowels with single sound, and words ending with a silent e.<br>
+  		<p style="color: green;">
+  			<b>Single Vowel Sound</b>
+  		</p><br>
+  		Take the word “ran” for instance. It’s a word with two consonants and one vowel. The vowel sound “a” teams up with two consonants to make one syllable. <br>
+
+		Now, take the word “dry” where the long “i” sound formed by the “y” joins with the two consonants to make one syllable. <br>
+		<p style="color: green;">
+  			<b>Double Vowels with Single Sound</b>
+  		</p><br>
+  		Take the word “grain” where there are three consonants and two vowels. The two vowels “a” and “i” produce one long vowel sound. A monosyllabic word is formed when the single vowel sound clubs with three consonants.<br>
+        <p style="color: green;">
+  			<b>Words Ending in a Silent E</b>
+  		</p><br>
+  		Let’s explain this with the help of an example yet again. Take the word “sane”, which is formed with two consonants and two vowels. The end-of-the-word “e” is silent so as to easily represent a long “a” sound. A monosyllabic word is formed when the single, long vowel sound joins with the two consonants.<br>
+
+  	</p>
+
+  	<a href="#Disyllabic"name="Multisyllabic">MULTISYLLABIC WORDS</a><br>
+  	<p class="para">
+  		A multisyllabic word is a word with more than one syllable. This can be two, three, four, or more syllables.<br>
+  		<p style="color: green;">
+  			<b>Two-Syllable Words or Disyllabic Words</b>
+  		</p><br>
+  		Example: Christmas <br>
+		Number of syllables: 2 <br>
+		The two syllables are: Christ- mas <br>
+		The stressed syllable is:<u>Christ</u> - mas<br>
+		The word is pronounced: Krist-mas<br>
+		<p style="color: green;">
+  			<b>Three-Syllable Words or Trisyllabic Words </b>
+  		</p><br>
+  	    Example: apartment <br>
+
+		Number of syllables: 3 <br>
+		The three syllables are: a-part-ment <br>
+		The stressed syllable is: a-<u>part</u>-ment<br>
+		The word is pronounced: u-pahrt-ment <br>
+		<p style="color: green;">
+  			<b>Four-Syllable Words or Tetrasyllabic Words</b>
+  		</p><br>
+  		Example: accuracy<br> 
+      Number of syllables: 4 <br>
+     The four syllables are: ac-cu-ra-cy<br>
+    The stressed syllable is:<u> ac</u>-cu-ra-cy <br>
+   The word is pronounced: ak-yer-uh-see<br>
+
+  	</p>
+  	<a href="#Intro" name="Disyllabic">WORD STRESS</a><br>
+  	<p class="para">
+  		At this syllable hour, we must talk a little bit about if not expound on what word stress is. Word stress is the idea that while pronouncing a word (a word that has more than one syllable), we don’t stress or accent every syllable in it the same way. One of the syllables (sometimes more than one) is always more stressed or accented. In other words, some syllables – the ones that are stressed – sound longer and louder. Often, they’re said at a higher pitch, too. The rest of the syllables will be unstressed or unaccented. <br>
+
+		Examples: <br>
+		Breakfast <br>
+		There are two syllables in breakfast – break-fast. While the first syllable <i>break</i> is stressed, the second one <i>fast</i> is unstressed. <br><br>
+
+		Beautiful<br>
+		There are three syllables in beautiful – beau-ti-ful. The first syllable <i>beau</i> is stressed. The other two are not stressed.<br> <br>
+		Tomorrow <br>
+		There are three syllables in tomorrow –to-mor-row. The second syllable<i> mor</i> is stressed and the other two are unstressed. <br>
+
+  	</p>
+  	
+  	</div>
+  		
+  	<script>
+		function openNav() 
+		{
+  			document.getElementById("mySidenav").style.width = "250px";
+		}
+		function closeNav() 
+		{
+  			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+  	</div>
+	</div>	
+
+</body>
+</html>
